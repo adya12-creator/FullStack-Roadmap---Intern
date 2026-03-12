@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Student Registration Form</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter Your Full Name!">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="user@gmail.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="9876543210">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">--Select Department--</option>
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="ece">Electronics and Communication Engineering</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+            </select>
+            <fieldset>
+                <legend>Current Semester</legend>
+                <input type="radio" id="sem1" name="semester" value="1" checked>
+                <label for="sem1">1st Semester</label>
+
+                <input type="radio" id="sem2" name="semester" value="2">
+                <label for="sem2">2nd Semester</label>
+
+                <input type="radio" id="sem3" name="semester" value="3">
+                <label for="sem3">3rd Semester</label>
+                <input type="radio" id="sem4" name="semester" value="4">
+                <label for="sem4">4th Semester</label>
+
+                <input type="radio" id="sem5" name="semester" value="5">
+                <label for="sem5">5th Semester</label>
+
+                <input type="radio" id="sem6" name="semester" value="6">
+                <label for="sem6">6th Semester</label>
+
+                <input type="radio" id="sem7" name="semester" value="7">
+                <label for="sem7">7th Semester</label>
+
+                <input type="radio" id="sem8" name="semester" value="8">
+                <label for="sem8">8th Semester</label>
+            </fieldset>
+            <label for="cgpa">CGPA</label>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" required>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <fieldset>
+                <legend>Known Programming Languages</legend>
+                <input type="checkbox" id="lang-c" name="languages" value="c">
+                <label for="lang-c">C</label>
+
+                <input type="checkbox" id="lang-python" name="languages" value="python">
+                <label for="lang-python">Python</label>
+
+                <input type="checkbox" id="lang-java" name="languages" value="java">
+                <label for="lang-java">java</label>
+
+                <input type="checkbox" id="lang-js" name="languages" value="javascript">
+                <label for="lang-js">javascript</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+            <input type="checkbox" id="confirm" name="confirm" required>
+            <label for="confirm">I confirm all information is accurate!</label>
+        </fieldset>
+        <fieldset>
+            <legend>Buttons</legend>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Clear All Fields</button>
+            <button type="button" onclick="preview()">Preview</button>
+        </fieldset>
+    </form>
+</body>
+</html>
