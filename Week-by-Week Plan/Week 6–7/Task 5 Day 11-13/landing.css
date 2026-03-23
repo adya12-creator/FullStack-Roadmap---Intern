@@ -1,0 +1,179 @@
+:root {
+  --primary: #f9dadf;
+  --secondary: #ecbbbb;
+  --text: #111111;
+  --spacing: 20px;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f3b9b9;
+  color: #333;
+}
+
+section {
+  padding: 60px 60px;
+}
+
+header {
+  position: sticky;
+  top: 1;
+  background: #fff;
+  padding: 15px 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #f3b9b9;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: 2;
+  background: #d46b82;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+img {
+  width: 20%;
+  height: auto;
+  display: inline;
+  border-radius: 12px;
+}
+
+#home img {
+  max-width: 350px;
+  border-radius: 200px;
+  align-items: flex-end;
+}
+
+#features{
+    padding: 60px 50px;
+    text-align: center;
+    order:-1;
+}
+
+#features h2 {
+  margin-bottom: 20px;
+}
+
+#testimonials {
+  padding: 60px 50px;
+  background: #fd9ae0;
+  text-align: center;
+}
+.testimonials-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#testimonials h2 {
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 260px;
+  padding: 20px;
+  margin:20px;
+  background: rgb(245, 171, 206);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+  font-weight: 600;
+}
+
+.pro{
+    background-color: rgb(248, 157, 224);
+    border:2;
+    border-radius: 12px;
+    padding: 40px;
+    border-color: #ca0eba !important;
+    border-width: .5px;
+    border-style:solid;
+    
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+ 
+footer > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+footer {
+  padding: 40px;
+}
+
+
+
+@media (min-width:375px){
+    .nav-links { display: none; }
+    .hero { flex-direction: column; }
+    h1 { font-size: 1.75rem; }
+}
+
+@media (min-width: 768px) {
+  .hero { flex-direction: row; } 
+  h1 { font-size: 2rem; }
+}
+
+@media (min-width: 1280px) {
+  .nav-links { display: flex; }   
+  .sidebar { display: block; }
+}

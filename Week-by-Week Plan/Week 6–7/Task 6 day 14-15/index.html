@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Student Registration Form</title>
+</head>
+<body class="body">
+
+    <form class="form" action="/submit" method="POST">
+       
+            <legend class="information">
+                <h1>Personal Information:</h1>
+            </legend>
+            <ul class="lists">
+                <li><label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter Your Full Name!">
+                </li>
+
+                <li> <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="user@gmail.com">
+                </li>
+
+                <li><label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="9876543210">
+                </li>
+
+                <li><label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </li>
+            </ul>
+
+            <div class="checkbox">
+                <input type="checkbox" id="confirm" name="confirm" required>
+                <label class="check" for="confirm">I confirm all information is accurate!</label>
+            </div>
+            
+        
+            <div class="btns">
+                <button class="btn" type="submit">
+                    <a href="academic.html">Submit</a>
+                </button>
+                <button class="btn" type="reset">Clear All Fields</button>
+                <button class="btn" type="button" onclick="preview">Preview</button>
+            </div>
+    </form>
+</body>
+</html>    
