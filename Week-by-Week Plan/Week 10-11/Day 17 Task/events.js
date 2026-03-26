@@ -11,7 +11,10 @@ const completedBtn = document.getElementById("completed-btn");
 function addTodo() {
   const text = input.value.trim();
 
-  if (text === "" ) return;
+  if (text === "" ){
+    alert("Enter valid input..");
+    return;
+  } 
   
   todos.push({
     text: text,
